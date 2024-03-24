@@ -6,7 +6,7 @@ import UrlInputForm from '../components/UrlInputForm/UrlInputForm'
 import UrlList from '../components/List/UrlList'
 
 function Profile() {
-  const [isGenerated, setIsGenerated] = useState({ state: false })
+  const [isGenerated, setIsGenerated] = useState(false)
   const { isLoggedIn, user } = useAuth()
   const navigate = useNavigate()
 
