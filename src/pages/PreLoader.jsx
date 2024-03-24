@@ -13,12 +13,12 @@ function PreLoader() {
       duration: 0.8,
       ease: "power4.out",
     })
-    timeline.to('h1', {
+    timeline.to('#loader-text', {
       y: 0,
       duration: 1,
       ease: "power3.out",
     })
-    timeline.to('h1', {
+    timeline.to('#loader-text', {
       delay: 0.8,
       y: 100,
       duration: 1,
@@ -40,9 +40,9 @@ function PreLoader() {
 
   return (
     <>
-      <div className="preloader w-full h-screen flex items-center justify-center overflow-hidden absolute z-50 bg-gradient-to-r from-yellow-50 via-white to-yellow-50">
+      <div className="flex preloader w-full h-screen items-center justify-center overflow-hidden fixed z-50 bg-gradient-to-r from-yellow-50 via-white to-yellow-50">
         <div id='border' className='border-b-[1.6px] border-zinc-400 overflow-hidden'>
-          <h1 className="text-5xl font-bold relative translate-y-full text-nowrap">Short Url.</h1>
+          <h1 id='loader-text' className="text-5xl font-bold relative translate-y-full text-nowrap">Short Url.</h1>
         </div>
       </div >
     </>

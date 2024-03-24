@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <AuthProvider>
+        <PreLoader />
         <Navbar />
         <Outlet />
         <Footer />
