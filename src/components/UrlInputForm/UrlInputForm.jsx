@@ -16,6 +16,7 @@ function UrlInputForm({ setIsGenerated }) {
       }
     }).then((response) => {
       setUrl('')
+      setIsGenerated((state) => !state)
     }).catch((error) => {
       if (error.response.data) {
         const errorMessage = error.response?.data
@@ -23,8 +24,8 @@ function UrlInputForm({ setIsGenerated }) {
       } else {
         setError(error.message)
       }
+      setIsGenerated((state) => !state)
     })
-    setIsGenerated((state) => !state)
   }
 
   return (
