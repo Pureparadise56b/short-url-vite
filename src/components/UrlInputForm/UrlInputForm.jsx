@@ -24,7 +24,7 @@ function UrlInputForm({ setIsGenerated }) {
         setError(error.message)
       }
     })
-    setIsGenerated({ state: true })
+    setIsGenerated((state) => !state)
   }
 
   return (

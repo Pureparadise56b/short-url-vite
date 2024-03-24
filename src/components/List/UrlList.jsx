@@ -11,7 +11,7 @@ import { domainUrl } from '../../domainUrl'
 export default function UrlList({ isGenerated }) {
   const [urls, setUrls] = useState([]);
   const [copyTitle, setCopyTitle] = useState('Copy');
-  const [isUrlDeletedConfirm, setIsUrlDeletedConfirm] = useState({ state: false });
+  const [isUrlDeletedConfirm, setIsUrlDeletedConfirm] = useState(false);
   const [copiedUrl, setCopiedUrl] = useState(null);
   const copyTimeoutRef = useRef(null);
 
